@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我们！</title>
     <style>
+        /* ... 其他样式 ... */
+
+    /* 适应小屏幕 */
+    @media only screen and (max-width: 600px) {
+        .glass {
+            padding: 10px; /* 调整磨砂玻璃效果的 padding */
+        }
+
+        .avatar {
+            width: 80px; /* 调整头像尺寸 */
+            height: 80px;
+        }
+
+        .tagline {
+            font-size: 16px; /* 调整标语字体大小 */
+            margin-bottom: 10px; /* 调整标语底部边距 */
+        }
+
+        .toolbar {
+            padding: 5px; /* 调整工具栏 padding */
+        }
+
+        .toolbar button {
+            padding: 10px; /* 调整按钮 padding */
+            font-size: 14px; /* 调整按钮字体大小 */
+        }
+
+        .toolbar img {
+            width: 20px; /* 调整按钮图标大小 */
+            height: 30px;
+        }
         body {
             margin: 0;
             padding: 0;
@@ -40,7 +71,7 @@
         .avatar {
             width: 100px;
             height: 100px;
-            border-radius: 50%;
+/*             border-radius: 50%; */
             overflow: hidden;
             margin: 20px auto;
         }
@@ -81,8 +112,8 @@
         }
 
         .toolbar img {
-            width: 70px;
-            height: 70px;
+            width: 30px;
+            height: 40px;
             object-fit: cover;
         }
     </style>
