@@ -29,20 +29,23 @@
 
         /* 磨砂玻璃效果 */
         .glass {
+            padding: 20px;
             position: absolute;
             top: 50%;
             left: 50%;
+            max-width: 600px; /* 设置最大宽度 */
             transform: translate(-50%, -50%);
             background: rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
+/*           border-radius: 50%; */
             padding: 20px;
-            text-align: center;
+            text-align: center; 
+             width: 80%; /* 或者使用百分比 */
         }
 
         .avatar {
             width: 100px;
             height: 100px;
-/*             border-radius: 50%; */
+          border-radius: 50%; 
             overflow: hidden;
             margin: 20px auto;
         }
@@ -79,13 +82,14 @@
             cursor: pointer;
             outline: none;
             padding: 25px;
-            font-size:20px;
+            font-size:25px;
         }
 
         .toolbar img {
-            width: 30px;
-            height: 40px;
+            width: 30%;
+            height: 30%;
             object-fit: cover;
+            border-radius: 50%; 
         }
     </style>
 </head>
