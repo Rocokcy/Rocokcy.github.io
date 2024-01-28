@@ -43,7 +43,7 @@
             left: 50%;
             max-width: 600px; /* 设置最大宽度 */
             transform: translate(-50%, -50%);
-            background: rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.2);
 /*           border-radius: 50%; */
             text-align: center; 
             width: 30%; /* 或者使用百分比 */
@@ -88,7 +88,9 @@
             display: flex;
             justify-content: space-between;
             width: 70%;
-                animation: fadeIn 1.5s ease-in-out; /* xx秒的逐渐淡入效果 */
+            animation: fadeIn 1.5s ease-in-out; /* xx秒的逐渐淡入效果 */
+            max-height:40%;
+            height:auto;
         }
 
         .toolbar button {
@@ -103,7 +105,7 @@
 
         .toolbar img {
             height: auto; 
-            max-height: 40%;
+            max-height: 100%;
             width: 100%;
             object-fit: cover;
             border-radius: 50%; 
