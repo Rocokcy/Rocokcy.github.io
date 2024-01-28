@@ -39,7 +39,7 @@
 /*           border-radius: 50%; */
             padding: 20px;
             text-align: center; 
-             width: 80%; /* 或者使用百分比 */
+             width: 30%; /* 或者使用百分比 */
         }
 
         .avatar {
@@ -73,7 +73,7 @@
             border-radius: 10px 10px 0 0;
             display: flex;
             justify-content: space-between;
-            width: 80%;
+            width: 70%;
         }
 
         .toolbar button {
@@ -81,13 +81,14 @@
             border: none;
             cursor: pointer;
             outline: none;
-            padding: 25px;
-            font-size:25px;
+            padding: 5%;
+          font-size: 100%; /* 使用相对单位设置字体大小，相对于父元素的字体大小 */
         }
 
         .toolbar img {
-            width: 30%;
-            height: 30%;
+            height: auto; 
+            max-height: 100%;
+            width: 100%;
             object-fit: cover;
             border-radius: 50%; 
         }
