@@ -26,6 +26,14 @@
             background: url('https://youimg1.c-ctrip.com/target/0102a120004fhqcagB7E5_D_10000_1200.jpg?proc=autoorient') center/cover no-repeat;
             filter: blur(10px);
         }
+        @keyframes fadeIn { 
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
         /* 磨砂玻璃效果 */
         .glass {
@@ -35,10 +43,11 @@
             left: 50%;
             max-width: 600px; /* 设置最大宽度 */
             transform: translate(-50%, -50%);
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.6);
 /*           border-radius: 50%; */
             text-align: center; 
             width: 30%; /* 或者使用百分比 */
+            animation: fadeIn 1.5s ease-in-out; /* xx秒的逐渐淡入效果 */
         }
 
         .avatar {
@@ -47,6 +56,7 @@
           border-radius: 50%; 
             overflow: hidden;
             margin: 20px auto;
+          animation: fadeIn 2.5s ease-in-out; /* xx秒的逐渐淡入效果 */
         }
 
         .avatar img {
@@ -56,9 +66,14 @@
         }
 
         .tagline {
-            color: #fff;
-            font-size: 18px;
+   background: linear-gradient(to right, #ffffff, #ff00cc);
+    display: inline;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 50px;
             margin-bottom: 20px;
+                font-family: 'Arial', sans-serif;
+    animation: fadeIn 3s ease-in-out; /* xx秒的逐渐淡入效果 */
         }
 
         /* 工具栏 */
@@ -73,6 +88,7 @@
             display: flex;
             justify-content: space-between;
             width: 70%;
+                animation: fadeIn 1.5s ease-in-out; /* xx秒的逐渐淡入效果 */
         }
 
         .toolbar button {
@@ -82,6 +98,7 @@
             outline: none;
             padding: 5%;
           font-size: 100%; /* 使用相对单位设置字体大小，相对于父元素的字体大小 */
+                animation: fadeIn 2.5s ease-in-out; /* xx秒的逐渐淡入效果 */
         }
 
         .toolbar img {
@@ -90,6 +107,7 @@
             width: 100%;
             object-fit: cover;
             border-radius: 50%; 
+                animation: fadeIn 2.5s ease-in-out; /* xx秒的逐渐淡入效果 */
         }
     </style>
 </head>
